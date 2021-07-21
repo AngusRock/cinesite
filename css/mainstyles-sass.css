@@ -137,7 +137,7 @@ img {
   background-color: #ca4a00 !important;
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 430px) {
   /* Styles */
   .footer__navList {
     display: block;

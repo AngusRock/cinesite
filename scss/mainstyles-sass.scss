@@ -36,7 +36,7 @@ img {
 }
 
 
-.topMenu a:hover, 
+.topMenu a:hover,
 .footer__navList a:hover {
     color: $orange-color !important;
 }
@@ -72,7 +72,7 @@ img {
 }
 
 .footer {
-    padding: 30px 20px;    
+    padding: 30px 20px;
     border: solid 1px rgba(105, 105, 105, 0.274);
 }
 
@@ -121,7 +121,7 @@ img {
     background-color: $orange-color-darker !important;
 }
 
-@media only screen and (max-width : 412px) {
+@media only screen and (max-width : 430px) {
     /* Styles */
     .footer__navList {
         display:block;

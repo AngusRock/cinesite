@@ -127,7 +127,7 @@
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 430px) {
   .gridAreas {
     display: -ms-grid;
     display: grid;

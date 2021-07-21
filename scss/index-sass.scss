@@ -31,8 +31,8 @@ $dark-grey-color: rgb(27, 27, 27);
     grid-area: mainSection2;
 }
 
-#mainSection1 p, 
-.nestedGrid__novedades p, 
+#mainSection1 p,
+.nestedGrid__novedades p,
 .nestedGrid__sinopsis h5{
     background-color: $dark-grey-color;
     padding: 7px 5px;
@@ -83,7 +83,7 @@ $dark-grey-color: rgb(27, 27, 27);
     align-self: start;
 }
   /* Smartphones (portrait) ----------- */
-  @media only screen and (max-width : 412px) {
+  @media only screen and (max-width : 430px) {
     .gridAreas {
         display: grid;
         grid-template-columns: 100%;
@@ -92,7 +92,7 @@ $dark-grey-color: rgb(27, 27, 27);
         "pageDescription"
         "mainSection1"
         "mainSection2"
-  
+
     }
     #mainSection2 {
         display: block;
@@ -115,7 +115,7 @@ $dark-grey-color: rgb(27, 27, 27);
     .filmsRecomendados__hideImage {
         display: none;
     }
-    .zoom img { 
+    .zoom img {
         height: 200px;
     }
   }
