@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.align {
+  text-align: center !important;
+}
+
+body {
+  background-color: #141414 !important;
+  font-family: 'Nunito', sans-serif !important;
+  color: white;
+  width: 80%;
+  margin-left: 10% !important;
+}
+
+h2, h3 {
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.topMenu a:hover,
+.footer__navList a:hover {
+  color: #ff5e00 !important;
+}
+
+.headerContainer {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100% !important;
+}
+
+.navbar {
+  margin-bottom: -30px;
+}
+
+.siteName {
+  color: #ff5e00 !important;
+  font-size: 25px;
+}
+
+.topMenu a {
+  margin-left: 25px;
+}
+
+.margin {
+  margin: 50px 0 20px 0;
+}
+
+.margin p {
+  margin-bottom: 25px;
+}
+
+.footer {
+  padding: 30px 20px;
+  border: solid 1px rgba(105, 105, 105, 0.274);
+}
+
+.footer-bg {
+  background-color: #1b1b1b;
+}
+
+.footer hr {
+  margin: 30px 0;
+}
+
+.footer__navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.footer__navList a {
+  margin-right: 30px;
+}
+
+.footerLegals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.zoom img {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  height: 314px;
+}
+
+.zoom img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.modal-styles {
+  background-color: #1b1b1b !important;
+  border: solid 1px rgba(105, 105, 105, 0.329) !important;
+}
+
+.modal-button {
+  background-color: #ff5e00 !important;
+  border: none !important;
+  width: 40%;
+}
+
+.modal-button:hover {
+  background-color: #ca4a00 !important;
+}
+
+@media only screen and (max-width: 412px) {
+  /* Styles */
+  .footer__navList {
+    display: block;
+  }
+  .footerLegals {
+    display: block;
+  }
+  .navbar {
+    margin-bottom: -10px;
+  }
+}
+/*# sourceMappingURL=mainstyles-sass.css.map */

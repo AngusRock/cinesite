@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,yBAAyB;EACzB,OAAO,EAAE,IAAI;EACb,cAAc,EAAC,GAAG;EAClB,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,YAAY;CAChC;;AAED,AAAA,OAAO,CAAC,EAAE,CAAA;EACN,gBAAgB,EAAE,OAAe;EACjC,OAAO,EAAE,OAAO;EAChB,mDAAmD;EACnD,aAAa,EAAE,GAAG;EAClB,aAAa,EAAE,IAAI;EACnB,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "../scss/recomendados-sass.scss"
+    ],
+    "names": [],
+    "file": "recomendados-sass.css"
+}
