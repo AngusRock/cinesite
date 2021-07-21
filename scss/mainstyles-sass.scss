@@ -1,0 +1,137 @@
+$bgcolor: rgb(20, 20, 20);
+$orange-color: rgb(255, 94, 0);
+$orange-color-darker: rgb(202, 74, 0);
+$dark-grey-color: rgb(27, 27, 27);
+
+//color para probar: rgb(212, 51, 51);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.align {
+    text-align: center !important;
+}
+
+body {
+    background-color: $bgcolor !important;
+    font-family: 'Nunito', sans-serif !important;
+    color: white;
+    width: 80%;
+    margin-left: 10% !important;
+}
+
+h2, h3 {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+img {
+    border-radius: 5px;
+}
+
+
+.topMenu a:hover, 
+.footer__navList a:hover {
+    color: $orange-color !important;
+}
+
+.headerContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: center;
+    width: 100% !important;
+}
+
+.navbar {
+    margin-bottom: -30px;
+}
+
+.siteName {
+    color: $orange-color !important;
+    font-size: 25px;
+}
+
+.topMenu a {
+    margin-left: 25px;
+}
+
+.margin {
+    margin: 50px 0 20px 0;
+}
+
+.margin p {
+    margin-bottom: 25px;
+}
+
+.footer {
+    padding: 30px 20px;    
+    border: solid 1px rgba(105, 105, 105, 0.274);
+}
+
+.footer-bg {
+    background-color: $dark-grey-color;
+}
+
+.footer hr { margin: 30px 0; }
+
+.footer__navList {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer__navList a {
+    margin-right: 30px;
+}
+
+.footerLegals {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.zoom img {
+    transition: transform .2s;
+    height: 314px;
+}
+
+.zoom img:hover {
+    transform:scale(1.2);
+}
+
+.modal-styles {
+    background-color: $dark-grey-color !important;
+    border: solid 1px rgba(105, 105, 105, 0.329) !important;
+}
+
+.modal-button {
+    background-color: $orange-color !important;
+    border: none !important;
+    width: 40%;
+}
+
+.modal-button:hover {
+    background-color: $orange-color-darker !important;
+}
+
+@media only screen and (max-width : 412px) {
+    /* Styles */
+    .footer__navList {
+        display:block;
+    }
+
+    .footerLegals {
+        display:block;
+    }
+
+    .navbar {
+        margin-bottom: -10px;
+    }
+}

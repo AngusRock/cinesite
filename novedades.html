@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/mainstyles-sass.css">
+		<link rel="stylesheet" href="./css/novedades-sass.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<title>Cine Site</title>
+	</head>
+	<body class="text-white">
+		<header>
+			<nav class="navbar navbar-expand-sm navbar-dark">
+				<div class="navbar-brand mb-0 siteName">
+					<h1>Cine Site</h1>
+				</div>
+				<button
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarNav"
+				class="navbar-toggler"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+				<div class="collapse navbar-collapse topMenu" id="navbarNav">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item active"><a href="index.html" class="nav-link active">Inicio</a></li>
+						<li class="nav-item active"><a href="recomendados.html" class="nav-link active">Recomendados</a></li>
+						<li class="nav-item active"><a href="novedades.html" class="nav-link active">Novedades</a></li>
+						<li class="nav-item active"><a href="#" class="nav-link active" data-bs-toggle="modal" data-bs-target="#registerModal">Registro</a></li>
+						<li class="nav-item active"><a href="#" class="nav-link active" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+					</ul>
+				</div>
+			</nav>
+			<hr>
+		</header>
+
+		<!-- Registration Modal -->
+		<div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content modal-styles">
+					<div class="modal-header">
+						<h2 class="modal-title" id="modalTitle">¡Registrate en el Sitio!</h2>
+						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form method="post">
+							<div class="form-group">
+							  <label for="inputName">Nombre</label>
+							  <input type="text" class="form-control" id="inputName">
+							</div>
+							<div class="form-group">
+							  <label for="inputLastName">Apellido</label>
+							  <input type="text" class="form-control" id="inputLastName">
+							</div>
+							<div class="form-group">
+							  <label for="inputDate">Fecha de Cumpleaños</label>
+							  <input type="date" class="form-control" id="inputDate">
+							</div>
+							<div class="form-group">
+							  <label for="inputEmail">Correo Electrónico</label>
+							  <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Ingresar correo electrónico">
+							</div>
+							<div class="form-group">
+							  <label for="inputPassword">Contraseña</label>
+							  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+							</div>
+							<br>
+							<div class="text-center">
+								<button type="button" class="btn btn-primary modal-button" data-bs-toggle="modal" data-bs-target="#confirmationModal" data-bs-dismiss="modal">Registrarse</button>
+								</div>
+						  </form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Confirmation of Registration Modal -->
+		<div class="modal fade" id="confirmationModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content modal-styles">
+					<div class="modal-body">
+						<h2 class="modal-title text-center" id="modalTitle">¡Gracias por Registrarte!</h2>
+						<br>
+						<div class="text-center">
+							<button type="submit" class="btn btn-primary modal-button" data-bs-toggle="modal" data-bs-dismiss="modal">Cerrar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Login Modal -->
+		<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content modal-styles">
+					<div class="modal-header">
+						<h2 class="modal-title" id="modalTitle">Iniciar Sesión</h2>
+						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form method="post">
+							<div class="form-group">
+							  <label for="inputEmail1">Correo Electrónico</label>
+							  <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Ingresar correo electrónico">
+							</div>
+							<div class="form-group">
+							  <label for="inputPassword1">Clave</label>
+							  <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+							</div>
+							<br>
+							<div class="text-center">
+								<button type="button" class="btn btn-primary modal-button" data-bs-toggle="modal" data-bs-dismiss="modal">Iniciar Sesión</button>
+								</div>
+						  </form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<section class="margin">
+			<h2>Novedades</h2>
+			<p>Aquí encontrarás informacion detallado sobre films específicos.</p>
+		</section>
+		<section class="margin">
+				<h5>Back to the Future - 1985 • 1h 56m • ATP</h5>
+		</section>
+		<div class="grid">
+			<div id="grid-item2">
+				<section>
+					<img src="./images/back-to-the-future-270x420.jpg" alt="portada film">
+				</section>
+			</div>
+			<div id="grid-item3">
+				<section>
+					<h3>Sinopsis</h3>
+					<p><i>Back to the Future is an American science fiction/comedy movie directed by Robert Zemeckis and released in 1985. It is about a young man named Marty McFly who accidentally travels into the past and jeopardizes his own future existence. The film was followed by two sequels, Back to the Future Part II (1989), and Back to the Future Part III (1990), forming a trilogy.</i></p>
+				</section>
+			</div>
+			<div id="grid-item4" class="nested-grid">
+					<div class="nested-grid__score">
+						<p><span class="text-color">Calificación:</span> 8.5</p>
+					</div>
+					<div class="nested-grid__cast">
+						<p><span class="text-color">Protagonistas:</span> Michael J. Fox, Christopher Lloyd</p>
+					</div>
+					<div class="nested-grid__time">
+						<p><span class="text-color">Duración:</span> 1h 56m</p>
+					</div>
+					<div class="nested-grid__genres">
+						<p><span class="text-color">Generos:</span> Ciencia Ficción, Comedia</p>
+					</div>
+					<div class="nested-grid__director">
+						<p><span class="text-color">Director:</span> Robert Zemeckis</p>
+					</div>
+					<div class="nested-grid__streaming">
+						<p>Servicios de Streaming: -</p>
+					</div>
+			</div>
+		</div>
+		<section class="margin">
+			<h5>Novedades Relacionadas</h5>
+			<div class="imagesSection zoom">
+				<a href="#"><img src="./images/Fight_Club-202x283.jpg" alt="portada film"></a>
+				<a href="#" class="filmImage"><img src="./images/led-zeppelin-202x266.jpg" alt="portada film"></a>
+				<a href="#"><img src="./images/back-to-the-future-202x314.jpg" alt="portada film"></a>
+				<a href="#"><img src="./images/terminator-202x272.jpg" alt="portada film"></a>
+				<a href="#" class="filmImage"><img src="./images/the-shining-202x314.jpg" alt="portada film"></a>				
+			</div>
+		</section>
+			<footer class="footer footer-bg">
+					<nav>
+						<ul class="footer__navList">
+							<li><a href="#">Inicio</a></li>
+							<li><a href="#mainSection1">Recomendados</a></li>
+							<li><a href="#mainSection2">Novedades</a></li>
+							<li><a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Registro</a></li>
+							<li><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+						</ul>
+					</nav>
+					<hr>
+					<div class="footerLegals">
+						<p>&copy; Cine Site - Todos los Derechos Reservados</p>
+						<p>Términos Legales | Política de Privacidad</p>
+					</div>
+			</footer>
+
+		<!-- Scrtips -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	</body>
+</html>

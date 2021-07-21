@@ -1,0 +1,16 @@
+.imagesSection {
+    /* text-align: center; */
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.margin h5{
+    background-color: rgb(29, 28, 28);
+    padding: 7px 5px;
+    /* border: solid 1px rgba(105, 105, 105, 0.274); */
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
