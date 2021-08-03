@@ -14,8 +14,8 @@ $dark-grey-color: rgb(27, 27, 27);
     grid-template-rows: auto auto 50%;
     grid-template-areas:
     "pageDescription pageDescription"
-    "mainSection1 mainSection1"
-    "mainSection2 mainSection2"
+    "recomendados recomendados"
+    "novedades novedades"
     ;
 }
 
@@ -23,15 +23,15 @@ $dark-grey-color: rgb(27, 27, 27);
     grid-area: pageDescription;
 }
 
-#mainSection1 {
-    grid-area: mainSection1;
+#recomendados {
+    grid-area: recomendados;
 }
 
-#mainSection2 {
-    grid-area: mainSection2;
+#novedades {
+    grid-area: novedades;
 }
 
-#mainSection1 p,
+#recomendados p,
 .nestedGrid__novedades p,
 .nestedGrid__sinopsis h5{
     background-color: $dark-grey-color;
@@ -45,11 +45,11 @@ $dark-grey-color: rgb(27, 27, 27);
     display: flex;
     flex-flow: row wrap;
     justify-content:space-evenly;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .nestedGrid__castImagenes img {
-    height: 80px;
+    height: 100%;
 }
 
 .nestedGrid {
@@ -90,11 +90,11 @@ $dark-grey-color: rgb(27, 27, 27);
         grid-template-rows: auto auto auto;
         grid-template-areas:
         "pageDescription"
-        "mainSection1"
-        "mainSection2"
+        "recomendados"
+        "novedades"
 
     }
-    #mainSection2 {
+    #novedades {
         display: block;
         grid-template-columns: 100%;
     }

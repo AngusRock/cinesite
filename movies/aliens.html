@@ -2,8 +2,8 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="./css/mainstyles-sass.css">
-		<link rel="stylesheet" href="./css/recomendados-sass.css">
+		<link rel="stylesheet" href="../css/mainstyles-sass.css">
+		<link rel="stylesheet" href="../css/novedades-sass.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap" rel="stylesheet">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -27,9 +27,9 @@
 			</button>
 				<div class="collapse navbar-collapse topMenu" id="navbarNav">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-						<li class="nav-item active"><a href="index.html" class="nav-link active">Inicio</a></li>
-						<li class="nav-item active"><a href="recomendados.html" class="nav-link active">Recomendados</a></li>
-						<li class="nav-item active"><a href="novedades.html" class="nav-link active">Novedades</a></li>
+						<li class="nav-item active"><a href="../index.html" class="nav-link active">Inicio</a></li>
+						<li class="nav-item active"><a href="../recomendados.html" class="nav-link active">Recomendados</a></li>
+						<li class="nav-item active"><a href="../index.html#novedades" class="nav-link active">Novedades</a></li>
 						<li class="nav-item active"><a href="#" class="nav-link active" data-bs-toggle="modal" data-bs-target="#registerModal">Registro</a></li>
 						<li class="nav-item active"><a href="#" class="nav-link active" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
 					</ul>
@@ -121,46 +121,73 @@
 			</div>
 		</div>
 
+
 		<section class="margin">
-			<h2>Recomendados</h2>
-			<p>Aquí encontrarás las recomendaciones de los films mas recientes para ver, y los clásicos de siempre para que no los olvides.</p>
+			<h2>Peliculas</h2>
+			<p>Aquí encontrarás información detallada sobre films específicos.</p>
 		</section>
 		<section class="margin">
-			<h5>Lo mas nuevo: los films populares que han aparecido recientemente</h5>
+				<h5>Aliens - 1986 • 2h 17m • +16</h5>
+		</section>
+		<div class="grid">
+			<div id="grid-item2">
+				<section>
+					<img src="../images/aliens-h420.jpg" alt="portada film">
+				</section>
+			</div>
+			<div id="grid-item3">
+				<section>
+					<h3>Sinopsis</h3>
+					<p><i>Fifty-seven years after surviving an apocalyptic attack aboard her space vessel by merciless space creatures, Officer Ripley awakens from hyper-sleep and tries to warn anyone who will listen about the predators.</i></p>
+				</section>
+			</div>
+			<div id="grid-item4" class="nested-grid">
+					<div class="nested-grid__score">
+						<p><span class="text-color">Calificación:</span> 8.3</p>
+					</div>
+					<div class="nested-grid__cast">
+						<p><span class="text-color">Protagonistas:</span> Sigourney Weaver</p>
+					</div>
+					<div class="nested-grid__time">
+						<p><span class="text-color">Duración:</span> 2h 17m</p>
+					</div>
+					<div class="nested-grid__genres">
+						<p><span class="text-color">Generos:</span> Ciencia Ficción</p>
+					</div>
+					<div class="nested-grid__director">
+						<p><span class="text-color">Director:</span> James Cameron</p>
+					</div>
+					<div class="nested-grid__streaming">
+						<p>Servicios de Streaming: -</p>
+					</div>
+			</div>
+		</div>
+		<section class="margin">
+			<h5>Novedades Relacionadas</h5>
 			<div class="imagesSection zoom">
-				<a href="./movies/back-to-the-future.html"><img src="./images/back-to-the-future-202x314.jpg" alt="portada film"></a>
-				<a href="./movies/terminator.html"><img src="./images/terminator-202x272.jpg" alt="portada film"></a>
-				<a href="./movies/fight-club.html"><img src="./images/Fight_Club-202x283.jpg" alt="portada film"></a>
-				<a href="./movies/aliens.html" class="filmImage"><img src="./images/aliens-h314.jpg" alt="portada film"></a>
-				<a href="./movies/the-shining.html" class="filmImage"><img src="./images/the-shining-202x314.jpg" alt="portada film"></a>
+				<a href="fight-club.html"><img src="../images/Fight_Club-202x283.jpg" alt="portada film"></a>				
+				<a href="terminator.html"><img src="../images/terminator-202x272.jpg" alt="portada film"></a>
+				<a href="back-to-the-future.html"><img src="../images/back-to-the-future-202x314.jpg" alt="portada film"></a>
+				<a href="the-shining.html" class="filmImage"><img src="../images/the-shining-202x314.jpg" alt="portada film"></a>				
 			</div>
 		</section>
-		<section class="margin">
-			<h5>Clásicos de los 80's y 90's</h5>
-			<div class="imagesSection zoom">
-				<a href="./movies/fight-club.html"><img src="./images/Fight_Club-202x283.jpg" alt="portada film"></a>
-				<a href="./movies/aliens.html" class="filmImage"><img src="./images/aliens-h314.jpg" alt="portada film"></a>
-				<a href="./movies/back-to-the-future.html"><img src="./images/back-to-the-future-202x314.jpg" alt="portada film"></a>
-				<a href="./movies/terminator.html"><img src="./images/terminator-202x272.jpg" alt="portada film"></a>
-				<a href="./movies/the-shining.html" class="filmImage"><img src="./images/the-shining-202x314.jpg" alt="portada film"></a>
-			</div>
-		</section>
-		<footer class="footer footer-bg">
-			<nav>
-				<ul class="footer__navList">
-					<li><a href="#">Inicio</a></li>
-					<li><a href="recomendados.html">Recomendados</a></li>
-					<li><a href="novedades.html">Novedades</a></li>
-					<li><a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Registro</a></li>
-					<li><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
-				</ul>
-			</nav>
-			<hr>
-			<div class="footerLegals">
-				<p>&copy; Cine Site - Todos los Derechos Reservados</p>
-				<p>Términos Legales | Política de Privacidad</p>
-			</div>
-	</footer>
+			<footer class="footer footer-bg">
+					<nav>
+						<ul class="footer__navList">
+							<li><a href="../index.html">Inicio</a></li>
+							<li><a href="../recomendados.html">Recomendados</a></li>
+							<li><a href="../index.html#novedades">Novedades</a></li>
+							<li><a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Registro</a></li>
+							<li><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+						</ul>
+					</nav>
+					<hr>
+					<div class="footerLegals">
+						<p>&copy; Cine Site - Todos los Derechos Reservados</p>
+						<p>Términos Legales | Política de Privacidad</p>
+					</div>
+			</footer>
+
 		<!-- Scrtips -->
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
