@@ -2,6 +2,10 @@ $bgcolor: rgb(20, 20, 20);
 $orange-color: rgb(255, 94, 0);
 $orange-color-darker: rgb(202, 74, 0);
 $dark-grey-color: rgb(27, 27, 27);
+$navbar-dark-grey-color: rgba(27, 27, 27, 0.747);
+$box-border-color: rgba(105, 105, 105, 0.329);
+$box-border-color-navbar: rgba(105, 105, 105, 0.171);
+$border-radius-default: 5px;
 
 //color para probar: rgb(212, 51, 51);
 
@@ -14,12 +18,31 @@ $dark-grey-color: rgb(27, 27, 27);
     text-align: center !important;
 }
 
+header {
+    margin-bottom: 12vh;
+}
+
+.navbar-style {   
+    backdrop-filter: saturate(200%) blur(7px);
+    border-bottom: solid 1px $box-border-color-navbar;
+    background: rgb(40,38,24);
+    background: linear-gradient(95deg, rgba(40,38,24,0.17130602240896353) 29%, rgba(202,74,0,0.1741071428571429) 100%);
+}
+
+.navbar-dimensions {
+    width: 80%;
+    margin-left: 10%;
+}
+
 body {
     background-color: $bgcolor !important;
     font-family: 'Nunito', sans-serif !important;
-    color: white;
+    //color: black !important;
+}
+
+.maincontainer {
     width: 80%;
-    margin-left: 10% !important;
+    margin-left: 10%;
 }
 
 h2, h3 {
@@ -32,9 +55,12 @@ a {
 }
 
 img {
-    border-radius: 5px;
+    border-radius: $border-radius-default;
 }
 
+.topMenu a {
+    margin-left: 25px;
+}
 
 .topMenu a:hover,
 .footer__navList a:hover {
@@ -59,36 +85,30 @@ img {
     font-size: 25px;
 }
 
-.topMenu a {
-    margin-left: 25px;
-}
-
 .margin {
-    margin: 50px 0 20px 0;
-}
+    margin-top: 50px;
 
-.margin p {
-    margin-bottom: 25px;
 }
 
 .footer {
     padding: 30px 20px;
-    border: solid 1px rgba(105, 105, 105, 0.274);
+    border: solid 1px $box-border-color;
+    border-top-left-radius: $border-radius-default;
+    border-top-right-radius: $border-radius-default;
+    hr {
+        margin: 30px 0;
+    }
+    &__navList {
+        display: flex;
+        list-style-type: none;
+        a {
+            margin-right: 30px;
+        }    
+    }
 }
 
 .footer-bg {
     background-color: $dark-grey-color;
-}
-
-.footer hr { margin: 30px 0; }
-
-.footer__navList {
-    display: flex;
-    list-style-type: none;
-}
-
-.footer__navList a {
-    margin-right: 30px;
 }
 
 .footerLegals {
@@ -108,7 +128,7 @@ img {
 
 .modal-styles {
     background-color: $dark-grey-color !important;
-    border: solid 1px rgba(105, 105, 105, 0.329) !important;
+    border: solid 1px $box-border-color !important;
 }
 
 .modal-button {
